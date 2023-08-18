@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="./styles.css">
+    <style>
+         html {
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+
+        *, *:before, *:after {
+            box-sizing: inherit;
+        }
+
+        body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+            margin: 0;
+            padding: 0;
+            font-weight: normal;
+        }
+
+        ol, ul {
+            list-style: none;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <section class="header">
+        <article class="searchBar">
+            <input class="searchInput" type="text">
+        </article>
+        <article class="navBar">
+            <a class="navOption" href="./categorias.html">Categorias</a>
+            <a class="navOption" href="./ofertaDoDia.html">Oferta do dia</a>
+            <a class="navOption" href="./Historico.html">Historico</a>
+            <a class="navOption" href="./cadastreSe.html">Cadastre-se</a>
+        </article>
+    </section>
+    <section class="content">
+        <section class="forms">
+            <h2>Cadastre-se</h2>
+            <form class="cadastro">
+                <div class="name">
+                    <label for="nameUser">Insira seu nome</label>
+                    <input type="text" id="nameUser" name="name" placeholder="Ex: João">
+                </div>
+                <div class="email">
+                    <label for="emailUser">Insira seu email</label>
+                    <input type="text" id="emailUser" name="email" placeholder="Ex: João@gmail.com">
+                </div>
+                <div class="password">
+                    <label for="passwordUser">Insira sua senha</label>
+                    <input type="text" id="passwordUser" name="password" placeholder="Ex: 1234">
+                </div>
+                <div class="confirmPassword">
+                    <label for="confirmPasswordUser">Repita sua senha</label>
+                    <input type="text" id="confirmPasswordUser" name="confirmPassword" placeholder="Ex: 1234">
+                </div>
+                <div class="gender">
+                    <label for="genderinput">Selecione seu gênero</label>
+                    <select name="genderinput" id="genderinput">
+                        <option value="men">Homem</option>
+                        <option value="women">Mulher</option>
+                    </select> 
+                </div>
+                <div class="button">
+                    <input type="submit" value="Enviar">
+                </div>
+            </form>
+        </section>
+    </section>
+</body>
+</html>
